@@ -88,7 +88,7 @@ Estos son los requisitos que tu proyecto debe que cumplir para asegurar que tu t
   * Cuáles son los objetivos de estos usuarios en relación con tu producto.
   * Cómo crees que el producto que estás creando está resolviendo sus problemas.
 
-Con estos requisitos cumplidos puedes [considerar agendar un Project Feedback con unx coach.](https://github.com/Laboratoria/DEV001-card-validation/edit/main/README.md#10-para-considerar-project-feedback).
+Con estos requisitos cumplidos puedes [considerar agendar un Project Feedback con unx coach.](https://github.com/Laboratoria/DEV001-card-validation#10-para-considerar-project-feedback)
 
 ## 6. Hito 2 (opcional): Mostrar la franquicia de tarjeta
 
