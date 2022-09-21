@@ -58,6 +58,7 @@ con la usuaria final a través del navegador, utilizando HTML, CSS y JavaScript
 como tecnologías.
 
 ## 4. Consideraciones generales
+
 * Este proyecto lo resolvemos de manera individual. Te recomendamos una duracion de 1-3 sprints.
 * Enfócate en aprender y no solamente en "completar" el proyecto. Te va a costar.
 * Te sugerimos que no intentes saberlo todo antes de empezar a codear.  
@@ -65,30 +66,29 @@ No te preocupes demasiado ahora por lo que _todavía_ no entiendas. Irás aprend
 
 ## 5. Hito 1: Criterios de aceptación mínimos del proyecto
 
-Estes son los requisitos que tu proyecto debes que cumplir para asegurar que tu trabajo toca los objetivos importantes.  
+Estos son los requisitos que tu proyecto debe que cumplir para asegurar que tu trabajo cubra los objetivos principales.  
 
 **1. Una interfaz que debe permitir a la usuaria validar un numero**  
-  * Insertar un numero (texto) que quiere validar. Usa solo caracteres numéricos (dígitos) en la tarjeta a validar [0-9].  
-  * Ver el resultado si es válido o no.  
-  * Ocultar todos los dígitos de su número de tarjeta menos los últimos
-4 caracteres.  
-  * No debe poder ingresar un campo vacío.  
+  * Insertar un numero (texto) que quieres validar. Usa solo caracteres numéricos (dígitos) en la tarjeta a validar [0-9].  
+  * Ver si el resultado es válido o no.  
+  * Ocultar todos los dígitos del número de tarjeta a exepción de los últimos 4 caracteres.  
+  * No debes poder ingresar un campo vacío.  
 
-**2. Pruebas unitarios de los métodos.**  
+**2. Pruebas unitarias de los métodos.**  
   Los metódos de `validator` (`isValid` y `maskify`) deben tener cobertura con pruebas unitarias.
 
 **3. Código de tu proyecto subido a tu repo y interfaz "desplegada".**  
-  El código final debe que estar subido al GitHub. La interfaz, la pagina web, debe ser "desplegada" usando GitHub Pages.
-
+  El código final debe estar subido en un repositorio en GitHub. La interfaz o pagina web, debe ser "desplegada" usando GitHub Pages.
+  
 **4. Un README que contiene una definición del producto.**  
   En el README cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz.  
-  Estas preguntas sirven como guia:
+  Estas preguntas sirven como guía:
 
   * Quiénes son los principales usuarios de producto.
   * Cuáles son los objetivos de estos usuarios en relación con tu producto.
   * Cómo crees que el producto que estás creando está resolviendo sus problemas.
 
-Con estes requisitos cumplido puedes [considerar Project Feedback con un coach](https://github.com/Laboratoria/DEV001-card-validation/edit/main/README.md#10-para-considerar-project-feedback).
+Con estos requisitos cumplidos puedes [considerar agendar un Project Feedback con unx coach.](https://github.com/Laboratoria/DEV001-card-validation/edit/main/README.md#10-para-considerar-project-feedback).
 
 ## 6. Hito 2 (opcional): Mostrar la franquicia de tarjeta
 
@@ -118,7 +118,7 @@ setup y configuración necesaria para ejecutar los tests (pruebas) así como _co
 coverage_ para ver el nivel de cobertura de los tests usando el comando `npm
 test`.
 
-El boilerplate que les damos contiene este estructura:
+El boilerplate que les damos contiene esta estructura:
 
 ```text
 ./
@@ -141,13 +141,13 @@ El boilerplate que les damos contiene este estructura:
 
 ### Descripción de scripts / archivos
 
-* `README.md`: debe explicar la información necesarias para el uso de tu aplicación web,
+* `README.md`: debe explicar la información necesaria para el uso de tu aplicación web,
   así como una introducción a la aplicación, su funcionalidad y decisiones de
   diseño que tomaron.
 * `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
   debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
 * `src/style.css`: este archivo debe contener las reglas de estilo. Queremos que escribas tus
-propias reglas, por eso NO está permitido el uso de frameworks de CSS (Bootstrap, materialize, etc).
+propias reglas, por eso NO está permitido el uso de frameworks de CSS (Bootstrap, Materialize, etc).
 * `src/validator.js`: acá debes implementar el objeto `validator`, el cual ya está
   _exportado_ en el _boilerplate_. Este objeto (`validator`) debe contener dos
   métodos:
@@ -169,7 +169,7 @@ propias reglas, por eso NO está permitido el uso de frameworks de CSS (Bootstra
     maskify(               '')  ===                ''
     ```
 * `src/index.js`: acá debes escuchar eventos del DOM, invocar `validator.isValid()`
-  y `validator.maskify()` según sea necesario y actualizar el resultado en la UI.
+  y `validator.maskify()` según sea necesario y actualizar el resultado en la UI (interfaz de usuario).
 * `test/validator.spec.js`: este archivo contiene algunos tests de ejemplo y acá
   tendrás que implementar los tests para `validator.isValid()` y `validator.maskify()`.
 
