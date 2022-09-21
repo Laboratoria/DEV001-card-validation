@@ -18,10 +18,10 @@
 ## 1. Objetivos de aprendizaje generales
 Como continuación del proyecto de preadmisión, volverás a trabajar sobre fundamentos de JavaScript, incluyendo conceptos como variables, condicionales, y funciones, así como eventos y manipulación básica del DOM, fundamentos de HTML y CSS.
 
-Mientras cumplir este proyecto, familiarizarás con estes nuevos conceptos:
+Mientras desarrollas este proyecto, te familiarizarás con estos nuevos conceptos:
 
-* Un _boilerplate_, la estructura básica de un proyecto en distintas carpetas (atraves `modulos` en JS).
-* Las herramientas mantenimiento y mejora del código (linters y pruebas unitarias).
+* Un _boilerplate_, la estructura básica de un proyecto en distintas carpetas (a través `modulos` en JS).
+* Las herramientas de mantenimiento y mejora del código (linters y pruebas unitarias).
 * Objetos en JavaScript, su estructura y métodos.
 * Iteración (bucles) en JavaScript.
 * Control de versiones con git (y la plataforma github)
@@ -33,7 +33,7 @@ también llamado algoritmo de módulo 10, es un método de suma de verificación
 se utiliza para validar números de identificación; tales como el IMEI de los
 celulares, tarjetas de crédito, etc.
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
+Este algoritmo es simple. Obtenemos el reverso del número a verificar (que
 solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
 par se les debe multiplicar por dos, si este número es mayor o igual a 10,
 debemos sumar los dígitos del resultado; el número a verificar será válido si
@@ -54,11 +54,11 @@ experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
 etc.
 
 Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
+con la usuaria final a través del navegador, utilizando HTML, CSS y JavaScript
 como tecnologías.
 
 ## 4. Consideraciones generales
-* Este proyecto debes que resolver en una manera individual. Te recomendamos una duracion de 1-3 sprints.
+* Este proyecto lo resolvemos de manera individual. Te recomendamos una duracion de 1-3 sprints.
 * Enfócate en aprender y no solamente en "completar" el proyecto. Te va a costar.
 * Te sugerimos que no intentes saberlo todo antes de empezar a codear.  
 No te preocupes demasiado ahora por lo que _todavía_ no entiendas. Irás aprendiendo.
