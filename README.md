@@ -433,14 +433,3 @@ Organización del Trabajo:
 * [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
 
 ***
-
-## 10. Para considerar Project Feedback
-
-En resumen, los criterios de aceptación mínimos del proyecto para considerar Project Feedback:
-
-* [ ] Tiene una interfaz que permite a la usuaria saber si la tarjeta es valido y ocultar el numero hasta las 4 ultimos digitos
-* [ ] El proyecto será entregado incluyendo pruebas unitarios de los métodos de `validator` (`isValid` y `maskify`) 
-* [ ] El proyecto será entregado libre de _errores_ de `eslint` (_warnings_ son ok)
-* [ ] El proyecto será entregado subiendo tu código a GitHub.
-* [ ] La interfaz será "desplegada" usando GitHub Pages. 
-* [ ] El README contiene una definición del producto
