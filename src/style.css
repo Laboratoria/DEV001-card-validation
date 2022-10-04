@@ -1,0 +1,635 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Raleway:wght@200;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.main-container,
+.container-img-card,
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  align-items: center;
+  background-color: #e5e5f7;
+  background-image: linear-gradient(135deg, #f9f9f9 25%, transparent 25%),
+  linear-gradient(225deg, #f9f9f9, 25%, transparent 25%),
+  linear-gradient(45deg, #f9f9f9 25%, transparent 25%),
+  linear-gradient(315deg, #f9f9f9 25%, #ffffff 25%);
+}
+
+/*Contenedor Landing Page */
+
+.nav-container{
+  position: static;
+  top: 0; left: 0;
+  width: 100%;
+  background: #f5f5f5;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  padding: 2rem 9%;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  z-index: 4;
+}
+
+.nav-container .logo{
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  color: #ff7800;
+  font-size: 2rem;
+}
+
+.nav-container span{
+  color: #072146;
+  font-size: 2rem;
+}
+
+.nav-container .list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-container .list a{
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #072146;
+}
+
+.nav-container .list a:hover{
+  color: #ff7800;
+  cursor: pointer;
+}
+
+.nav-container .list .a-modified{
+  padding: .5rem 5%;
+  background-color: #ff7800;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  color: #f5f5f5;
+}
+
+.nav-container .list .a-modified:hover{
+  background-color: #072146;
+  cursor: pointer;
+  color: #f5f5f5;
+}
+
+
+#landing-page-container{
+  width: 100%;
+  background: url(https://i.imgur.com/HvMHuoA.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-text-landing{
+  min-height: 100vh;
+  padding: 0 .9%;
+  padding-top: 7.5rem;
+  width: 100%;
+  /*visibility: hidden;*/
+}
+
+.welcome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  gap: 30px;
+  margin-left: 21px;
+}
+
+.welcome .parraf-landing{
+  color: #072146;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.welcome span{
+  color: #f3f3f3;
+}
+.welcome .text-landing-page {
+  font-size: 1rem;
+}
+.welcome .btn{
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 15px 15px;
+  border-radius: 15px;
+  color: #f3f3f3;
+  background-color: #072146;
+}
+.welcome .btn:hover{
+  background-color: #007aff;
+  cursor: pointer;
+}
+
+.img-landing-bank{
+  width: 80%;
+  margin-left: 25px;
+  margin-top: 90px;
+  animation: float 3s linear infinite;
+}
+
+@keyframes float{
+  0%, 100%{
+    transform: translateY(0rem);
+  }
+  50%{
+    transform: translateY(-3.5rem);
+  }
+}
+
+/*Contenedor de cajas extra*/
+
+.container-information-boxes .boxes{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-information-boxes{
+  width: 100%;
+  padding: 15px;
+}
+
+.boxes{
+  position: relative;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px 20px;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.227);
+}
+
+.boxes:hover{
+  background-color: #007aff;
+}
+
+.boxes h2{
+  color: #072146;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.img-features{
+  width: 20%;
+}
+
+.img-usuario{
+  position: absolute;
+  top: 30px;
+  right: -8px;
+  width: 20%;
+  z-index: 3;
+}
+
+/*Contenedor tarjeta de crédito*/
+
+.title{
+  color: #072146;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.container-img-card {
+  width: 90%;
+  height: 60%;
+  max-height: 400px;
+  padding: 18px 23px;
+  gap: 20px;
+  background-image: linear-gradient(80deg, #072146, #007aff);
+  /*object-fit: contain;*/
+  border-radius: 25px;
+  color: #f5f5f5;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.company-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.number-card {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.text {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.information,
+.expiryDate {
+  font-size: 0.7rem;
+}
+
+.expiryDate {
+  margin-top: 6px;
+}
+
+/*Contenedor Formulario*/
+
+.container-form {
+  display: flex;
+  justify-content: center;
+  background-color: #072146 ;
+  border-radius: 35px 35px 0 0;
+  width: 100%;
+  position: relative;
+}
+
+.title-form {
+  font-size: 1rem;
+  padding: 12px 20px;
+  border-radius: 15px;
+  border: solid 2px #072146;
+  color: #072146;
+  text-align: center;
+  background-color: rgb(231, 231, 231);
+  position: absolute;
+  top: -30px;
+  left: auto;
+}
+
+.img {
+  width: 35px;
+  height: 25px;
+}
+
+.img-men {
+  display: none;
+}
+
+.img-girl {
+  display: none;
+}
+
+.form {
+  margin-top: 40px;
+  width: 90%;
+  padding: 20px 5px;
+  gap: 20px;
+}
+
+.container-select {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.expiry {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  padding-left: 5px;
+}
+
+.expiry-date {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 5px rgba(70, 70, 70, 0.536);
+}
+
+.input:focus {
+  outline: none;
+}
+
+/*texto de error al verificar*/
+
+.error {
+  background-color: rgb(253, 86, 56);
+  width: auto;
+  text-align: center;
+  padding: 3px 5px;
+  border-radius: 8px;
+  color: #f5f5f5;
+  font-size: 0.7rem;
+  margin-top: -25px;
+}
+
+.hide {
+  display: none;
+}
+
+/*imagenes input*/
+
+.img-and-input,
+.bank-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-bank {
+  width: 50px;
+  height: auto;
+}
+
+.cvvContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+
+.button-form {
+  padding: 13px 18px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 3px 5px rgba(23, 23, 23, 0.536);
+  transition-duration: 0.8s;
+  background-color: #ff7800;
+}
+
+.button-form:hover {
+  transition-duration: 0.8s;
+  cursor: pointer;
+  color: #f5f5f5;
+  background-color: #007aff;
+}
+
+/*Footer*/
+.programmer-name {
+  background-color: #007aff;
+  color: #f5f5f5;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.programmer-name h2{
+  background-color: #f3f3f3;
+  padding: 8px 15px;
+  border-radius: 10px;
+  box-shadow: 3px 5px rgba(23, 23, 23, 0.536);
+  width: 100%;
+  color:#072146;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.programmer-name p{
+  font-size: .7rem;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+
+/*Modal Result Card Validation*/
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 5;
+  background: rgba(21, 21, 21, 0.9);
+}
+
+#modal .modal-container {
+  background-color: white;
+  margin: auto;
+  width: 80%;
+  max-width: 500px;
+  max-height: 70%;
+  padding: 50px 10px 40px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;
+  border: 2px solid #ff7800;
+}
+
+.modal-container img {
+  width: 85%;
+  position: absolute;
+  left: 12%;
+  top: -158px;
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.modal-container p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 600;
+  color: rgb(44, 43, 43);
+}
+
+.modal-container h3 {
+  color: #072146;
+  font-size: 1.2rem;
+}
+
+
+
+
+/*medida laptop*/
+
+@media (min-width: 600px) {
+  .nav-container{
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-container .logo{
+    text-align:left;
+  }
+  .nav-container .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  .nav-container .list a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #072146;
+  }
+  .container-text-landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome{
+    margin-left: 40px;
+  }
+  .img-landing-bank{
+    width: 80%;
+    margin-left: 60px;
+    margin-right: -180px;
+  }
+/*css boxes*/
+  
+.container-information-boxes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.container-information-boxes{
+  padding: 30px 20px;
+}  
+
+/*css de card validation*/
+
+  .container-img-card {
+    width: 30%;
+  }
+  .container-form {
+    width: 50%;
+    margin-bottom: 0px;
+  }
+  .form {
+    width: 70%;
+  }
+  .img-men {
+    width: 36%;
+    display: flex;
+    position: absolute;
+    left: 620px;
+    top: 35px;
+    animation-name: bounce-men;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce-men {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .img-girl {
+    width: 35%;
+    display: flex;
+    position: absolute;
+    left: -180px;
+    top: 15px;
+    animation-name: bounce-girl;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce-girl {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+  .img-and-input,
+  .bank-options {
+    gap: 30px;
+  }
+
+  /*Modal*/
+  #modal .modal-container {
+    width: 40%;
+    padding: 40px 10px 20px 10px;
+  }
+  .modal-container img {
+    width: 70%;
+    left: 17%;
+    top: -220px;
+  }
+
+  /*footer*/
+  .programmer-name {
+    padding: 80px;
+    justify-content: space-evenly
+
+  }
+  .programmer-name section{
+    width: 30%;
+  }
+  .programmer-name p{
+    font-size: 1rem;
+    text-align: center;
+  }
+}
