@@ -1,14 +1,245 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Validation</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <main class="main-container">
+      <!-- Contenedor Navegador y Landing Page -->
+      <section id="landing-page-container" class="fond">
+        <nav id="nav-container" class="nav-container">
+          <a href="./index.html" class="logo"><span>Card</span>App</a>
+          <ul class="list">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+            <a href="#validate" class="a-modified">Validate Card</a>
+          </ul>
+        </nav>
+
+        <section class="container-text-landing" id="home">
+          <div class="welcome">
+            <h3 class="parraf-landing">
+              Online Banking Service, beast <span>mobile app</span>
+              Card Validation
+            </h3>
+            <span class="text-landing-page"
+              >Forget about going to the bank and validate your card from the
+              comfort of your home, the easiest and most innovative way to
+              verify your information.</span
+            >
+            <a href="#validate" class="btn">Card Validate</a>
+          </div>
+
+          <div class="container.img">
+            <img
+              src="https://i.imgur.com/19FCpPi.png"
+              alt="bank-img"
+              class="img-landing-bank"
+              id="img-landing-page"
+            />
+          </div>
+        </section>
+      </section>
+
+      <!-- Contenedor Cajas extra debajo del landing Page -->
+      <section class="container-information-boxes" id="features">
+        <div class="boxes">
+          <img
+            class="img-features"
+            src="https://i.imgur.com/pitl0TN.png"
+            alt="credit-card"
+          />
+          <h2>Obtain Credit Card</h2>
+          <p>Learn more ...</p>
+          <img
+            class="img-usuario"
+            src="https://i.imgur.com/9Eswk4n.png"
+            alt="img-1"
+          />
+        </div>
+        <div class="boxes">
+          <img
+            class="img-features"
+            src="https://i.imgur.com/TAXknAt.png"
+            alt="money"
+          />
+          <h2>Digital Account</h2>
+          <p>Learn more ...</p>
+          <img
+            class="img-usuario"
+            src="https://i.imgur.com/sgCWbp9.png"
+            alt="img-2"
+          />
+        </div>
+        <div class="boxes">
+          <img
+            class="img-features"
+            src="https://i.imgur.com/isM6aLD.png"
+            alt="protect-card"
+          />
+          <h2>Protect my cards</h2>
+          <p>Learn more ...</p>
+          <img
+            class="img-usuario"
+            src="https://i.imgur.com/PdlDHhD.png"
+            alt="img-3"
+          />
+        </div>
+      </section>
+
+      <!-- Contenedor Tarjeta de Credito -->
+      <p class="title">MY CARD</p>
+      <section class="container-img-card" id="validate">
+        <div class="company-name">
+          <h2 class="title-bank">BANK</h2>
+          <h2 class="title-company">VISA</h2>
+        </div>
+        <img
+          src="https://i.imgur.com/CeGdWwP.png"
+          alt="symbol-card"
+          class="img"
+        />
+        <span class="number-card" id="number-card">#### #### #### 1234</span>
+        <div class="card-details">
+          <div>
+            <p class="text">Card holder name:</p>
+            <span id="name" class="information">Camila del Prado</span>
+          </div>
+          <div>
+            <p class="text">Expiry Date:</p>
+            <div class="information, expiryDate">
+              <span id="expiry-month">00</span>/<span id="expiry-year">00</span>
+            </div>
+          </div>
+          <div>
+            <p class="text">CVV:</p>
+            <span id="cvv-number" class="information">478</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contenedor Formulario para validar Tarjeta -->
+      <section class="container-form">
+        <h2 class="title-form">VALIDATE YOUR CREDIT CARD</h2>
+        <img src="https://i.imgur.com/185Vly1.png" alt="men" class="img-men" />
+        <img src="https://i.imgur.com/0kWBODb.png" alt="men" class="img-girl" />
+        <form class="form">
+          <input
+            type="text"
+            name="number-card"
+            maxlength="16"
+            placeholder="Enter card number:"
+            class="input"
+            id="input-number-card"
+            required
+          />
+          <p id="number-card-error" class="error hide"></p>
+
+          <input
+            type="text"
+            name="name-usuario"
+            placeholder="Card holder name:"
+            class="input"
+            maxlength="25"
+            id="input-name-card"
+            required
+          />
+          <p id="name-card-error" class="error hide"></p>
+
+          <div class="container-select">
+            <p class="expiry">Expiry Date:</p>
+            <section class="expiry-date">
+              <select name="month-card" id="month-card" class="input">
+                <!--Aquí añado los options de month desde Javascript -->
+                <option disabled selected>Month:</option>
+              </select>
+
+              <select name="year-card" id="year-card" class="input">
+                <!--Aquí añado los options de year desde Javascript -->
+                <option disabled selected>Year:</option>
+              </select>
+            </section>
+          </div>
+
+          <div class="img-and-input">
+            <div class="cvvContainer">
+              <input
+                type="text"
+                id="security-code"
+                class="input"
+                name="security-code"
+                min="0"
+                maxlength="3"
+                placeholder="CVV:"
+                required
+              />
+              <p id="text-security" class="error hide"></p>
+            </div>
+
+            <section class="bank-options">
+              <img
+                src="https://logos-download.com/wp-content/uploads/2016/02/Visa_Logo_1999.png"
+                alt="logo-visa"
+                class="logo-bank"
+              />
+              <img
+                src="https://th.bing.com/th/id/OIP.zeRTxpEsrjvlKPWbIlwwagHaEK?pid=ImgDet&rs=1"
+                alt="logo-mastercard"
+                class="logo-bank"
+              />
+              <img
+                src="https://logodownload.org/wp-content/uploads/2018/11/bbva-logo-5.png"
+                alt="logo-bbva"
+                class="logo-bank"
+              />
+            </section>
+          </div>
+
+          <button class="button-form" id="button-card-Validation">
+            SUBMIT
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- pie de página -->
+    <footer class="programmer-name" id="contact">
+      <section>
+        <h2> Who are we?</h2>
+        <p>
+          We are an application designed with the objective of providing a
+          better service to our users. Our principles and goals are based on
+          people and their values.
+        </p>
+      </section>
+      <section>
+        <h2>Contact:</h2>
+        <p>📇 0900 504 607</p>
+        <h2>Designed:</h2>
+        <p>👧 Gabyzam</p>
+      </section>
+    
+    </footer>
+
+    <!-- Contenedor Modal -->
+    <section id="modal" class="modalHide">
+      <div class="modal-container">
+        <img
+          src="https://i.imgur.com/gB5JVlY.png"
+          id="img-modal"
+          alt="img-modal"
+        />
+        <h3 id="countdown">⏰: 5</h3>
+        <p id="enteredCard">The entered card is:</p>
+        <h3 id="title-modal"></h3>
+      </div>
+    </section>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
