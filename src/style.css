@@ -143,7 +143,7 @@
   width: 80%;
   margin-left: 25px;
   margin-top: 90px;
-  animation: float 3s linear infinite;
+  animation: float 6s linear infinite;
 }
 
 @keyframes float{
@@ -470,7 +470,7 @@
   left: 12%;
   top: -158px;
   animation-name: bounce;
-  animation-duration: 3s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 
@@ -573,7 +573,7 @@
     left: 620px;
     top: 35px;
     animation-name: bounce-men;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
   }
 
@@ -598,7 +598,7 @@
     left: -180px;
     top: 15px;
     animation-name: bounce-girl;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
   }
 
