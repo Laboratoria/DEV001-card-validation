@@ -1,6 +1,7 @@
 import validator from "./validator.js";
 import selectOptions from "./selectOptions.js";
 import inputValidator from "./inputValidator.js";
+import showFranchise from "./showFranchise.js";
 
 //?Traer los elementos o etiquetas de HTML
 
@@ -27,8 +28,12 @@ selectOptions.changeYear(yearSelect, LabelYearDate);
 const numberCardInput = document.getElementById("input-number-card");
 const textErrorNumberCard = document.getElementById("number-card-error");
 
+const inputFranchiseBank = document.getElementById("title-company-bank");
+
 inputValidator.validatornumbers(numberCardInput, textErrorNumberCard);
 validator.maskify(numberCardInput.value); //* llamamos a la función maskify de Validator.js
+//* invocamos a la funcion validateFranchise del objeto showFranchise.
+showFranchise.validateFranchise(numberCardInput,inputFranchiseBank);
 
 ///name Card:
 const nameCardInput = document.getElementById("input-name-card");
@@ -43,6 +48,8 @@ const textCvv = document.getElementById("text-security");
 const spanCardCvv = document.getElementById("cvv-number");
 
 inputValidator.validatorcvv(inputCvv, textCvv, spanCardCvv);
+
+
 
 //? Función mostrar los números en la tarjeta:
 
