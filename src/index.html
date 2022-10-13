@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de credito valida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+ <div class="container">
+  <div>
+    <img src="images/credit_card_preview" alt="" width="250" height="170">
+  </div>
+  <form id="formulario">
+    <div class="input-box">
+      <p> Número de tarjeta </p>
+      <input type="text" maxlength="16" id="card-number" placeholder="0000" value="" pattern="[0-9\/]*$">
+    </div>
+
+    <div class="input-box">
+      <p> Titular de tarjeta </p>
+      <input type="text" id="card-user">
+    </div>
+
+    <div class="input-box">
+      <p> Fecha de Expiracion </p>
+      <input type="text"  maxlength="4" id="ex" placeholder=" Mes / Año">
+    </div>
+
+    <div class="input-box">
+      <p> CVV </p>
+      <input type="text" maxlength="3" placeholder="CVV">
+    </div>
+
+    <button type="submit"> Verificar </button>
+  </form>
+
+</div>
+
+
+
+  <!-- -<form id="containerResp">
+    <p class="esValida"></p>
+    <p id="mensaje"></p>
+    <img src="images/check.png" id="verified" />
+    <img src="images/tarjeta.invalida.jpeg" id="invalid" />
+    <button type="submit" onclick="location.reload()">Aceptar</button>
+  </form> -->
+ 
+  <footer> Cread </footer>
+  <script src="index.js" type="module"></script>
+
+</body>
+
 </html>
