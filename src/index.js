@@ -6,19 +6,29 @@ formulario.addEventListener("submit", e => {
   e.preventDefault();
 
   const creditCardNumber = (formulario["card-number"].value)
-  const verificar = validator.isValid(creditCardNumber);
-  alert(verificar);
+  // const verificar = validator.isValid(creditCardNumber);
+  // alert(verificar);
   const tarjeta = document.getElementById("card-number")
   tarjeta.value = validator.maskify(creditCardNumber)
 
 
 
-  if(creditCardNumber==="") {
+ if(creditCardNumber === "") {
  alert("Por favor llene todos los campos")
   }
-})
 
- // let creditCardNumber =document.getElementById("Tarjeta").value ;
+//
+ if ( validator.isValid(creditCardNumber) === true) {
+    alert("Tarjeta Valida")
+
+  } else{
+    alert("Tarjeta Invalida ")
+  }
+}
+
+)
+
+ 
   
 
 
@@ -47,9 +57,6 @@ formulario.addEventListener("submit", e => {
 // //else {
 // //alert("No es psoible validar")
 
-//   //}
-//   //mask.textContent = validator.maskify(creditCardNumber.value);
-// ///}}})
 
 
 

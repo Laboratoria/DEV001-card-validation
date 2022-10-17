@@ -23,7 +23,7 @@ const validator = {
         //console.log({ cardArr })
 
         if (suma % 10 === 0) {
-          //  alert("tarjeta Valida");
+          // alert("tarjeta Valida");
           return true;
         }else { 
             //alert("tarjeta invalida");
@@ -31,34 +31,7 @@ const validator = {
         }
 
 
-        // if (i % 2 === 0) {
-
-
-        //     let acumulador = cardArr[i] * 2;
-        //     if (acumulador >= 10) {
-        //         let acumulador2 = acumulador - 9;
-        //         cardArr[i] = acumulador2;
-        //     } else {
-        //         cardArr[i] = acumulador;
-        //     }
-        // }
-
-        // let suma = 0;
-        // for (let i = 0; i < cardArr.length; i++) {
-        //     suma += parseInt(cardArr[i]);
-        // }
-
-        // console.log({suma});
-
-        // if (suma % 10 === 0) {
-        //     alert("tarjeta Valida");
-
-        // } else {
-        //     console.log("tarjeta invalida");
-        //     return false;
-        // }
-
-
+    
     },
 
     maskify: function (creditCardNumber) {

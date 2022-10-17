@@ -15,12 +15,15 @@
  	display: flex;
 	justify-content: center;
 	justify-items: center;
-	border: solid 0px rgb(235, 225, 225) 
+	border: solid 0px rgb(235, 225, 225) ;
+	background-color: aliceblue;
+	
  }
 
  .input-box {
  	font-family: 'Helvetica';
  	margin: 2;
+	margin-top: -6%;
  }
 
 
@@ -32,3 +35,11 @@ font-size: 15px;
 text-align: start;
 
 }
+  h2{
+
+		text-align: center;
+	}
+
+
+
+ 
